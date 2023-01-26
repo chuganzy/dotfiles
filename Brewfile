@@ -6,7 +6,6 @@ tap "leoafarias/fvm"
 tap "robotsandpencils/made"
 
 brew "aria2"
-brew "cocoapods"
 brew "gh"
 brew "gnupg"
 brew "lcov"
