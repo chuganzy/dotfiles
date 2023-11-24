@@ -7,7 +7,6 @@ brew "aria2"
 brew "gh"
 brew "mas"
 brew "nvm"
-brew "python@3.11"
 brew "rbenv"
 brew "tree"
 brew "leoafarias/fvm/fvm"
@@ -30,5 +29,6 @@ cask "warp"
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Keynote", id: 409183694
+mas "NordVPN", id: 905953485
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
