@@ -1,7 +1,5 @@
 tap "dart-lang/dart"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "leoafarias/fvm"
 tap "robotsandpencils/made"
 brew "libssh2"
@@ -18,7 +16,6 @@ cask "1password"
 cask "1password-cli"
 cask "android-studio"
 cask "discord"
-cask "fig"
 cask "firefox"
 cask "fork"
 cask "google-chrome"
@@ -29,9 +26,9 @@ cask "monitorcontrol"
 cask "notion"
 cask "slack"
 cask "visual-studio-code"
+cask "warp"
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Unsplash Wallpapers", id: 1284863847
