@@ -7,3 +7,5 @@ update:
 .PHONY: install
 install:
 	ln -svf $(PWD)/.zshrc ~
+	ln -svf $(PWD)/.asdfrc ~
+	ln -svf $(PWD)/.tool-versions ~
