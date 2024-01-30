@@ -3,6 +3,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # asdf
 . $(brew --prefix asdf)/libexec/asdf.sh
+export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
 
 # Android
 export ANDROID_SDK_ROOT=~/Library/Android/sdk
