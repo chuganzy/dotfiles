@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew bundle
+
+# Symlinks
+repo_root=$(git rev-parse --show-toplevel)
+
+ln -svf $repo_root/.zshrc ~
+ln -svf $repo_root/.asdfrc ~
+ln -svf $repo_root/.tool-versions ~
+
+source ~/.zshrc
+
+# asdf
+asdf plugin add flutter
+asdf plugin add ruby
+asdf plugin add nodejs
