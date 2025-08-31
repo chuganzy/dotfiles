@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -7,13 +7,8 @@ brew bundle
 # Symlinks
 repo_root=$(git rev-parse --show-toplevel)
 
+mkdir -p ~/.config
 ln -svf $repo_root/.zshrc ~
-ln -svf $repo_root/.asdfrc ~
-ln -svf $repo_root/.tool-versions ~
+ln -sfv $repo_root/config/mise ~/.config
 
 source ~/.zshrc
-
-# asdf
-asdf plugin add flutter
-asdf plugin add ruby
-asdf plugin add nodejs

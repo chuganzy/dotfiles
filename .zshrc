@@ -5,9 +5,11 @@ elif [[ -x /usr/local/bin/brew ]]; then
   eval "$(/usr/local/bin/brew shellenv)"
 fi
 
-# asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
-export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
+# mise
+eval "$(mise activate zsh)"
+
+# Rust
+. "$HOME/.cargo/env"
 
 # Android
 export ANDROID_SDK_ROOT=~/Library/Android/sdk
@@ -19,7 +21,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$PATH:$BUN_INSTALL/bin"
 
 # Flutter
-export FLUTTER_ROOT="$(asdf where flutter)"
+export FLUTTER_ROOT="$(mise where flutter)"
 
 # LLVM-16
 export PATH="$PATH:$(brew --prefix llvm@16)/bin"
