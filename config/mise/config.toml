@@ -1,5 +1,6 @@
 [tools]
 flutter = "3.35"
+go = "1.25"
 node = "22"
 ruby = "3.2"
 

@@ -8,7 +8,6 @@ brew "cmake"
 brew "gh"
 brew "zstd"
 brew "ghostscript"
-brew "go"
 brew "icu4c@77"
 brew "jq"
 brew "libiconv"
@@ -40,7 +39,3 @@ cask "slack"
 cask "visual-studio-code"
 cask "warp"
 cask "zoom"
-mas "Keynote", id: 409183694
-mas "NordVPN", id: 905953485
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
