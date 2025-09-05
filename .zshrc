@@ -16,8 +16,6 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 # Flutter
 export FLUTTER_ROOT="$(mise where flutter)"
 
-# LLVM-16
-export PATH="$PATH:$(brew --prefix llvm@16)/bin"
 
 # local
 export PATH="$PATH:$HOME/.local/bin"
