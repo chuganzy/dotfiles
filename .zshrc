@@ -13,10 +13,6 @@ export ANDROID_SDK_ROOT=~/Library/Android/sdk
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
-# Bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$PATH:$BUN_INSTALL/bin"
-
 # Flutter
 export FLUTTER_ROOT="$(mise where flutter)"
 
