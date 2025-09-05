@@ -8,9 +8,6 @@ fi
 # mise
 eval "$(mise activate zsh)"
 
-# Rust
-. "$HOME/.cargo/env"
-
 # Android
 export ANDROID_SDK_ROOT=~/Library/Android/sdk
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
