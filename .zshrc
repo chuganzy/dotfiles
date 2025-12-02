@@ -14,8 +14,9 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
 # Flutter
-export FLUTTER_ROOT="$(mise where flutter)"
-
+if mise where flutter &> /dev/null; then
+  export FLUTTER_ROOT="$(mise where flutter)"
+fi
 
 # local
 export PATH="$PATH:$HOME/.local/bin"
