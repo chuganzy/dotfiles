@@ -9,7 +9,7 @@ fi
 eval "$(mise activate zsh)"
 
 # Android
-export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
@@ -18,9 +18,14 @@ if mise where flutter &> /dev/null; then
   export FLUTTER_ROOT="$(mise where flutter)"
 fi
 
+# 1Password
+if [[ -r "$HOME/.config/op/plugins.sh" ]]; then
+  source "$HOME/.config/op/plugins.sh"
+fi
+
 # local
 export PATH="$PATH:$HOME/.local/bin"
 
 # alias
-alias dev='cd ~/Developer'
+alias dev='cd "$HOME/Developer"'
 alias be='bundle exec'
