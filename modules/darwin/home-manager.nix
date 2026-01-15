@@ -6,20 +6,24 @@
   ...
 }:
 
+let
+  username = config.system.primaryUser;
+  homeDirectory = config.users.users.${username}.home;
+  androidSdkRoot = "${homeDirectory}/Library/Android/sdk";
+in
 {
   imports = [ inputs.home-manager.darwinModules.home-manager ];
 
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.${config.system.primaryUser} = {
+    users.${username} = {
       imports = [
         ./../home
       ];
 
       home = {
-        username = config.system.primaryUser;
-        homeDirectory = config.users.users.${config.system.primaryUser}.home;
+        inherit username homeDirectory;
         packages = with pkgs; [
           appcleaner
           chatgpt
@@ -28,6 +32,13 @@
           brewCasks.android-studio
           brewCasks.fork
           brewCasks.ghostty
+        ];
+        sessionVariables = {
+          ANDROID_SDK_ROOT = androidSdkRoot;
+        };
+        sessionPath = [
+          "${androidSdkRoot}/emulator"
+          "${androidSdkRoot}/platform-tools"
         ];
       };
     };
