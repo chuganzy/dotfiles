@@ -2,10 +2,14 @@
   config,
   ...
 }:
-
+let
+  username = config.system.primaryUser;
+  homeDirectory = "/Users/${username}";
+  appsDirectory = "${homeDirectory}/Applications/Home Manager Apps";
+in
 {
   nix.enable = false;
-  users.users.${config.system.primaryUser}.home = "/Users/${config.system.primaryUser}";
+  users.users.${username}.home = homeDirectory;
 
   system = {
     stateVersion = 5;
@@ -26,6 +30,26 @@
         show-recents = false;
         showAppExposeGestureEnabled = true;
         wvous-tr-corner = 6;
+        persistent-apps = [
+          "${appsDirectory}/Google Chrome.app"
+          "${appsDirectory}/ChatGPT.app"
+          "${appsDirectory}/Discord.app"
+          "${appsDirectory}/Spotify.app"
+          "/System/Applications/Calendar.app"
+          "${appsDirectory}/Fork.app"
+          "${appsDirectory}/Ghostty.app"
+          "${appsDirectory}/Visual Studio Code.app"
+          "${appsDirectory}/Android Studio.app"
+        ];
+        persistent-others = [
+          "${homeDirectory}/Downloads"
+          { 
+            folder = {
+              path = "${homeDirectory}/Developer";
+              showas = "list";
+            };
+          }
+        ];
       };
       finder = {
         FXPreferredViewStyle = "clmv";

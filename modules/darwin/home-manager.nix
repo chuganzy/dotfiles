@@ -27,11 +27,11 @@ in
         packages = with pkgs; [
           appcleaner
           chatgpt
+          ghostty-bin
           monitorcontrol
           xcodes
           brewCasks.android-studio
           brewCasks.fork
-          brewCasks.ghostty
         ];
         sessionVariables = {
           ANDROID_SDK_ROOT = androidSdkRoot;
