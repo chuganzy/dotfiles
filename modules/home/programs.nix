@@ -4,10 +4,6 @@
 }:
 {
   programs = {
-    firefox = {
-      enable = true;
-    };
-
     gh = {
       enable = true;
     };
@@ -35,10 +31,6 @@
           idiomatic_version_file_enable_tools = [ "node" ];
         };
       };
-    };
-
-    vscode = {
-      enable = true;
     };
 
     zoxide = {

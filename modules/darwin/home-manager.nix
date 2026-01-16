@@ -25,13 +25,7 @@ in
       home = {
         inherit username homeDirectory;
         packages = with pkgs; [
-          appcleaner
-          chatgpt
-          ghostty-bin
-          monitorcontrol
           xcodes
-          brewCasks.android-studio
-          brewCasks.fork
         ];
         sessionVariables = {
           ANDROID_SDK_ROOT = androidSdkRoot;

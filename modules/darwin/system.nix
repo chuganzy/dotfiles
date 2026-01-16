@@ -5,7 +5,6 @@
 let
   username = config.system.primaryUser;
   homeDirectory = "/Users/${username}";
-  appsDirectory = "${homeDirectory}/Applications/Home Manager Apps";
 in
 {
   nix.enable = false;
@@ -31,15 +30,15 @@ in
         showAppExposeGestureEnabled = true;
         wvous-tr-corner = 6;
         persistent-apps = [
-          "${appsDirectory}/Google Chrome.app"
-          "${appsDirectory}/ChatGPT.app"
-          "${appsDirectory}/Discord.app"
-          "${appsDirectory}/Spotify.app"
+          "/Applications/Google Chrome.app"
+          "/Applications/ChatGPT.app"
+          "/Applications/Discord.app"
+          "/Applications/Spotify.app"
           "/System/Applications/Calendar.app"
-          "${appsDirectory}/Fork.app"
-          "${appsDirectory}/Ghostty.app"
-          "${appsDirectory}/Visual Studio Code.app"
-          "${appsDirectory}/Android Studio.app"
+          "/Applications/Fork.app"
+          "/Applications/Ghostty.app"
+          "/Applications/Visual Studio Code.app"
+          "/Applications/Android Studio.app"
         ];
         persistent-others = [
           "${homeDirectory}/Downloads"
