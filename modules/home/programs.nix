@@ -1,4 +1,5 @@
 {
+  pkgs,
   ...
 }:
 {
@@ -40,12 +41,35 @@
       enable = true;
     };
 
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+
     zsh = {
       enable = true;
+      autosuggestion = {
+        enable = true;
+      };
       shellAliases = {
         be = "bundle exec";
-        dev = ''cd "$HOME/Developer"'';
       };
+      plugins = [
+        {
+          name = "powerlevel10k";
+          src = pkgs.zsh-powerlevel10k;
+          file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+        }
+        {
+          name = "powerlevel10k-config";
+          src = ./dotfiles;
+          file = "p10k.zsh";
+        }
+        {
+          name = "zsh-completions";
+          src = pkgs.zsh-completions;
+        }
+      ];
     };
   };
 }
