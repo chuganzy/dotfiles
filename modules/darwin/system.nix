@@ -43,7 +43,7 @@ in
         ];
         persistent-others = [
           "${homeDirectory}/Downloads"
-          { 
+          {
             folder = {
               path = "${homeDirectory}/Developer";
               showas = "list";
