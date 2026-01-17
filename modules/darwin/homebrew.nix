@@ -7,17 +7,19 @@
     enable = true;
 
     casks = [
+      "1password"
+      "1password-cli"
       "android-studio"
       "appcleaner"
       "chatgpt"
-      "discord"
       "firefox"
       "ghostty"
       "google-chrome"
+      "hopper-disassembler"
       "fork"
       "logi-options+"
       "monitorcontrol"
-      "spotify"
+      "steam"
       "visual-studio-code"
     ];
   };

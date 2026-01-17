@@ -4,6 +4,8 @@
 
     flake-parts.url = "github:hercules-ci/flake-parts";
 
+    _1password-shell-plugins.url = "github:1Password/shell-plugins";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

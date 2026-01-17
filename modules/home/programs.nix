@@ -4,6 +4,11 @@
 }:
 {
   programs = {
+    _1password-shell-plugins = {
+      enable = true;
+      plugins = with pkgs; [ gh ];
+    };
+
     gh = {
       enable = true;
     };
@@ -43,6 +48,9 @@
       autosuggestion = {
         enable = true;
       };
+      syntaxHighlighting = {
+        enable = true;
+      };
       shellAliases = {
         be = "bundle exec";
       };
@@ -58,7 +66,7 @@
           file = "p10k.zsh";
         }
         {
-          name = "zsh-completions";
+          name = "completions";
           src = pkgs.zsh-completions;
         }
       ];
