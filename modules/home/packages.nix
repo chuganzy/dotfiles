@@ -9,6 +9,7 @@
     jq
     just
     libyaml
+    ni
     ninja
     tree
     zstd
