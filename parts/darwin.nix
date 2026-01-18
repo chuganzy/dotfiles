@@ -13,7 +13,8 @@ let
     };
 
   hosts = [
-    "personal-mac"
+    "darwin-personal"
+    "darwin-company"
   ];
 in
 {

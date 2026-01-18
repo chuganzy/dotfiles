@@ -18,6 +18,7 @@ in
       NSGlobalDomain = {
         AppleEnableMouseSwipeNavigateWithScrolls = true;
         AppleEnableSwipeNavigateWithScrolls = true;
+        AppleInterfaceStyle = "Dark";
         KeyRepeat = 2;
         InitialKeyRepeat = 15;
         "com.apple.trackpad.scaling" = 3.0;
