@@ -16,6 +16,7 @@
       "discord"
       "epic-games"
       "spotify"
+      "steam"
     ];
   };
 }

@@ -5,6 +5,7 @@
 {
   homebrew = {
     enable = true;
+    onActivation.cleanup = "zap";
 
     casks = [
       "1password"
@@ -19,7 +20,6 @@
       "fork"
       "logi-options+"
       "monitorcontrol"
-      "steam"
       "visual-studio-code"
     ];
   };

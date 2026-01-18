@@ -37,14 +37,8 @@ in
         wvous-tr-corner = 6;
         persistent-apps = [
           "/Applications/Google Chrome.app"
-          "/Applications/ChatGPT.app"
-          "/Applications/Discord.app"
-          "/Applications/Spotify.app"
-          "/System/Applications/Calendar.app"
-          "/Applications/Fork.app"
           "/Applications/Ghostty.app"
           "/Applications/Visual Studio Code.app"
-          "/Applications/Android Studio.app"
         ];
         persistent-others = [
           "${homeDirectory}/Downloads"
