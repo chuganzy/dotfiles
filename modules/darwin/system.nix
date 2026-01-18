@@ -13,6 +13,11 @@ in
   system = {
     stateVersion = 5;
 
+    keyboard = {
+      enableKeyMapping = true;
+      remapCapsLockToControl = true;
+    };
+
     defaults = {
       ".GlobalPreferences"."com.apple.mouse.scaling" = 3.0;
       NSGlobalDomain = {
