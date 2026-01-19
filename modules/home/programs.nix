@@ -11,6 +11,9 @@
 
     gh = {
       enable = true;
+      settings = {
+        git_protocol = "ssh";
+      };
     };
 
     git = {
@@ -19,6 +22,13 @@
         user = {
           name = "Takeru Chuganji";
           email = "chu@ganzy.jp";
+          signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOmEYZIqYF0ulGOhKF8sd7CaRQrnR/VH4HoYxu00z1Nz";
+        };
+        gpg = {
+          format = "ssh";
+        };
+        commit = {
+          gpgsign = true;
         };
       };
     };
@@ -36,6 +46,11 @@
           idiomatic_version_file_enable_tools = [ "node" ];
         };
       };
+    };
+
+    ssh = {
+      enable = true;
+      enableDefaultConfig = false;
     };
 
     starship = {
