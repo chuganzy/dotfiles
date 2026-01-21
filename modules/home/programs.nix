@@ -33,6 +33,10 @@
       };
     };
 
+    lazygit = {
+      enable = true;
+    };
+
     mise = {
       enable = true;
       enableZshIntegration = true;
