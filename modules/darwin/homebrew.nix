@@ -19,7 +19,6 @@
       "hopper-disassembler"
       "fork"
       "logi-options+"
-      "monitorcontrol"
       "visual-studio-code"
     ];
   };

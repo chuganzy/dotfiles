@@ -17,6 +17,7 @@
       "epic-games"
       "spotify"
       "steam"
+      "tailscale-app"
     ];
   };
 }
