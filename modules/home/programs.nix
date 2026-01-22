@@ -9,6 +9,10 @@
       plugins = with pkgs; [ gh ];
     };
 
+    bat = {
+      enable = true;
+    };
+
     gh = {
       enable = true;
       settings = {
@@ -52,6 +56,10 @@
       };
     };
 
+    ripgrep = {
+      enable = true;
+    };
+
     ssh = {
       enable = true;
       enableDefaultConfig = false;
@@ -60,6 +68,10 @@
     starship = {
       enable = true;
       enableZshIntegration = true;
+    };
+
+    superfile = {
+      enable = true;
     };
 
     zoxide = {
