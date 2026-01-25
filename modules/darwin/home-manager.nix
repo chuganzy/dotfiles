@@ -38,6 +38,7 @@ in
       };
 
       programs.git.signing.signer = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+      programs.mise.globalConfig.tools.java = "zulu-17";
       programs.ssh.matchBlocks."*".identityAgent =
         "\"~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock\"";
     };

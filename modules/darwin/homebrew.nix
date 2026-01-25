@@ -15,6 +15,7 @@
       "chatgpt"
       "firefox"
       "ghostty"
+      "github-copilot-for-xcode"
       "google-chrome"
       "hopper-disassembler"
       "fork"
