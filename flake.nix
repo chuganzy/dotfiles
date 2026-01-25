@@ -20,6 +20,11 @@
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    gitalias = {
+      url = "github:GitAlias/gitalias";
+      flake = false;
+    };
   };
 
   outputs =

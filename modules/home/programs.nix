@@ -1,4 +1,5 @@
 {
+  inputs,
   pkgs,
   ...
 }:
@@ -22,6 +23,9 @@
 
     git = {
       enable = true;
+      includes = [
+        { path = "${inputs.gitalias}/gitalias.txt"; }
+      ];
       signing = {
         format = "ssh";
         key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOmEYZIqYF0ulGOhKF8sd7CaRQrnR/VH4HoYxu00z1Nz";
