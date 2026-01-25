@@ -22,17 +22,15 @@
 
     git = {
       enable = true;
+      signing = {
+        format = "ssh";
+        key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOmEYZIqYF0ulGOhKF8sd7CaRQrnR/VH4HoYxu00z1Nz";
+        signByDefault = true;
+      };
       settings = {
         user = {
           name = "Takeru Chuganji";
           email = "chu@ganzy.jp";
-          signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOmEYZIqYF0ulGOhKF8sd7CaRQrnR/VH4HoYxu00z1Nz";
-        };
-        gpg = {
-          format = "ssh";
-        };
-        commit = {
-          gpgsign = true;
         };
       };
     };
