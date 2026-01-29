@@ -35,6 +35,7 @@ in
         show-recents = false;
         showAppExposeGestureEnabled = true;
         wvous-tr-corner = 6;
+        wvous-br-corner = 1;
         persistent-apps = [
           "/Applications/Google Chrome.app"
           "/Applications/Ghostty.app"
@@ -58,9 +59,6 @@ in
         Clicking = true;
         Dragging = true;
         TrackpadThreeFingerHorizSwipeGesture = 1;
-      };
-      CustomUserPreferences = {
-        "com.apple.dock".wvous-tr-modifier = 0;
       };
     };
   };

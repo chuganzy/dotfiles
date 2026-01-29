@@ -55,6 +55,9 @@
         settings = {
           idiomatic_version_file_enable_tools = [ "node" ];
         };
+        shell_alias = {
+          be = "bundle exec";
+        };
       };
     };
 
@@ -88,9 +91,6 @@
       };
       syntaxHighlighting = {
         enable = true;
-      };
-      shellAliases = {
-        be = "bundle exec";
       };
     };
   };
