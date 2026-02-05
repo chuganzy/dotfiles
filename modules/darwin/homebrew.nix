@@ -13,6 +13,7 @@
       "android-studio"
       "appcleaner"
       "chatgpt"
+      "codex-app"
       "firefox"
       "ghostty"
       "github-copilot-for-xcode"
