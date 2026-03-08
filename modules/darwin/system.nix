@@ -8,7 +8,15 @@ let
 in
 {
   nix.enable = false;
-  users.users.${username}.home = homeDirectory;
+
+  # WORKAROUND:
+  # https://github.com/nix-darwin/nix-darwin/issues/1237
+  # knownUsers and uid are required to change the default shell.
+  users.knownUsers = [ username ];
+  users.users.${username} = {
+    home = homeDirectory;
+    uid = 501;
+  };
 
   system = {
     stateVersion = 5;

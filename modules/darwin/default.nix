@@ -4,6 +4,7 @@
 
 {
   imports = [
+    ../shared
     ./environment.nix
     ./home-manager.nix
     ./homebrew.nix

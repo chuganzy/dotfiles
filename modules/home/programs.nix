@@ -10,6 +10,13 @@
       enable = true;
     };
 
+    fish = {
+      enable = true;
+      shellAbbrs = {
+        be = "bundle exec";
+      };
+    };
+
     gh = {
       enable = true;
     };
@@ -38,7 +45,6 @@
 
     mise = {
       enable = true;
-      enableZshIntegration = true;
       globalConfig = {
         tools = {
           bun = "1.3";
@@ -47,9 +53,6 @@
         };
         settings = {
           idiomatic_version_file_enable_tools = [ "node" ];
-        };
-        shell_alias = {
-          be = "bundle exec";
         };
       };
     };
@@ -65,7 +68,6 @@
 
     starship = {
       enable = true;
-      enableZshIntegration = true;
     };
 
     superfile = {
@@ -74,17 +76,6 @@
 
     zoxide = {
       enable = true;
-      enableZshIntegration = true;
-    };
-
-    zsh = {
-      enable = true;
-      autosuggestion = {
-        enable = true;
-      };
-      syntaxHighlighting = {
-        enable = true;
-      };
     };
   };
 }
