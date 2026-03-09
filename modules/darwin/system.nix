@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   ...
 }:
 let
@@ -15,7 +16,7 @@ in
   users.knownUsers = [ username ];
   users.users.${username} = {
     home = homeDirectory;
-    uid = 501;
+    uid = lib.mkDefault 501;
   };
 
   system = {
