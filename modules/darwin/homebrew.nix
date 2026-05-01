@@ -18,6 +18,7 @@
       "ghostty"
       "github-copilot-for-xcode"
       "google-chrome"
+      "google-gemini"
       "hopper-disassembler"
       "fork"
       "logi-options+"
