@@ -48,6 +48,7 @@ in
         persistent-apps = [
           "/Applications/Google Chrome.app"
           "/Applications/ChatGPT.app"
+          "/Applications/Codex.app"
           "/Applications/Ghostty.app"
           "/Applications/Visual Studio Code.app"
         ];
