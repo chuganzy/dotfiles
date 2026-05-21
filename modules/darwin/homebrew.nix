@@ -11,6 +11,7 @@
       "1password"
       "1password-cli"
       "android-studio"
+      "antigravity"
       "appcleaner"
       "chatgpt"
       "codex-app"
