@@ -47,9 +47,9 @@
       enable = true;
       globalConfig = {
         tools = {
-          bun = "1.3";
           node = "24";
-          ruby = "3.2";
+          rust = "1.96";
+          cmake = "4.3";
         };
         settings = {
           idiomatic_version_file_enable_tools = [ "node" ];
