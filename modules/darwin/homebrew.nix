@@ -13,10 +13,11 @@
       "android-studio"
       "codex-app"
       "firefox"
+      "fork"
       "ghostty"
       "google-chrome"
       "hopper-disassembler"
-      "fork"
+      "karabiner-elements"
       "logi-options+"
       "visual-studio-code"
     ];
