@@ -42,7 +42,7 @@ in
       programs = {
         git.signing.signer = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
         mise.globalConfig.tools.java = "zulu-17";
-        ssh.matchBlocks."*".identityAgent =
+        ssh.settings."*".IdentityAgent =
           "\"~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock\"";
       };
 
