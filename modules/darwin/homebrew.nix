@@ -25,6 +25,7 @@
       "karabiner-elements"
       "logi-options+"
       "visual-studio-code"
+      "xcodes-app"
     ];
   };
 }
