@@ -22,8 +22,10 @@
       "ghostty"
       "google-chrome"
       "hopper-disassembler"
+      "icon-composer"
       "karabiner-elements"
       "logi-options+"
+      "sf-symbols"
       "visual-studio-code"
       "xcodes-app"
     ];
