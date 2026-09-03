@@ -18,6 +18,8 @@
       "android-studio"
       "chatgpt"
       "claude"
+      "claude-code"
+      "codex"
       "firefox"
       "fork"
       "ghostty"
