@@ -17,8 +17,6 @@
       "1password-cli"
       "android-studio"
       "chatgpt"
-      "claude"
-      "claude-code"
       "codex"
       "firefox"
       "fork"
