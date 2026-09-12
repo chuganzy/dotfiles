@@ -18,6 +18,7 @@
       "android-studio"
       "chatgpt"
       "codex"
+      "figma"
       "firefox"
       "fork"
       "ghostty"

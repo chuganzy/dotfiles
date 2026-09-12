@@ -12,6 +12,7 @@
     libyaml
     ni
     ninja
+    nixfmt
     tree
     watchman
     zstd
