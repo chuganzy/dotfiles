@@ -1,0 +1,13 @@
+# Read-only PR operations
+prefix_rule(
+    pattern = ["gh", "pr", ["view", "list", "status", "checks", "diff"]],
+    decision = "allow",
+    justification = "Allows read-only GitHub PR inspection via gh CLI.",
+)
+
+# PR write operations
+prefix_rule(
+    pattern = ["gh", "pr", ["create", "edit", "comment", "review", "merge"]],
+    decision = "prompt",
+    justification = "Review GitHub PR write operations before running them outside the sandbox.",
+)

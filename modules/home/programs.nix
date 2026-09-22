@@ -10,6 +10,14 @@
       enable = true;
     };
 
+    codex = {
+      enable = true;
+      package = null;
+      rules = {
+        github = ./codex/github.rules;
+      };
+    };
+
     fish = {
       enable = true;
       shellAbbrs = {
