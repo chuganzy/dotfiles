@@ -14,9 +14,6 @@
     casks = [
       "blender"
       "discord"
-      "epic-games"
-      "spotify"
-      "steam"
       "tailscale-app"
     ];
   };

@@ -7,9 +7,6 @@
     enable = true;
     onActivation = {
       cleanup = "zap";
-      extraFlags = [
-        "--force-cleanup"
-      ];
     };
 
     casks = [
