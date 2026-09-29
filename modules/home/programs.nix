@@ -16,6 +16,9 @@
       rules = {
         github = ./codex/github.rules;
       };
+      skills = {
+        babysit-pr = inputs.codex-src + "/.codex/skills/babysit-pr";
+      };
     };
 
     fish = {
@@ -32,7 +35,7 @@
     git = {
       enable = true;
       includes = [
-        { path = "${inputs.gitalias}/gitalias.txt"; }
+        { path = "${inputs.gitalias-src}/gitalias.txt"; }
       ];
       signing = {
         format = "ssh";
