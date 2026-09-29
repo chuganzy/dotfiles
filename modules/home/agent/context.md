@@ -1,3 +1,11 @@
+## Git operations
+
+- Do not create another clone or worktree to work around Git permission errors.
+- If a Git command fails because `.git/index.lock` or another path under `.git`
+  cannot be written due to sandbox restrictions, request scoped host access and
+  retry the same Git command.
+- Never clone the repository into `/tmp` or another directory as a workaround.
+
 ## GitHub operations
 
 - Always use the GitHub CLI (`gh`) for GitHub operations, including creating,
