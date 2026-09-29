@@ -13,9 +13,7 @@
     codex = {
       enable = true;
       package = null;
-      rules = {
-        github = ./codex/github.rules;
-      };
+      context = ./agent/context.md;
       skills = {
         babysit-pr = inputs.codex-src + "/.codex/skills/babysit-pr";
       };
