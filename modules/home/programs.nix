@@ -14,9 +14,6 @@
       enable = true;
       package = null;
       context = ./agent/context.md;
-      skills = {
-        babysit-pr = inputs.codex-src + "/.codex/skills/babysit-pr";
-      };
     };
 
     fish = {

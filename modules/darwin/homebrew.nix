@@ -13,6 +13,8 @@
       "1password"
       "1password-cli"
       "android-studio"
+      "antigravity"
+      "antigravity-cli"
       "chatgpt"
       "claude"
       "claude-code"

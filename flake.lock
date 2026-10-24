@@ -19,22 +19,6 @@
         "type": "github"
       }
     },
-    "codex-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1790647077,
-        "narHash": "sha256-ZKXTcl39+unhb+JSGTgq2BVx9eTMPnSeXatVYg/p1e4=",
-        "owner": "openai",
-        "repo": "codex",
-        "rev": "13f580ef090887bf0dfcdd366fa783ac553e273e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "openai",
-        "repo": "codex",
-        "type": "github"
-      }
-    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -160,7 +144,6 @@
     "root": {
       "inputs": {
         "_1password-shell-plugins": "_1password-shell-plugins",
-        "codex-src": "codex-src",
         "flake-parts": "flake-parts",
         "gitalias-src": "gitalias-src",
         "home-manager": "home-manager",

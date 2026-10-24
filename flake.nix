@@ -6,11 +6,6 @@
 
     _1password-shell-plugins.url = "github:1Password/shell-plugins";
 
-    codex-src = {
-      url = "github:openai/codex";
-      flake = false;
-    };
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
