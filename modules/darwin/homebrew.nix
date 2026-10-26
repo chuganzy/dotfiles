@@ -24,6 +24,7 @@
       "fork"
       "ghostty"
       "google-chrome"
+      "google-gemini"
       "hopper-disassembler"
       "icon-composer"
       "karabiner-elements"
