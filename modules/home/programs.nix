@@ -63,6 +63,10 @@
       };
     };
 
+    pnpm = {
+      enable = true;
+    };
+
     ripgrep = {
       enable = true;
     };
