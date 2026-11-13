@@ -47,6 +47,7 @@ in
         wvous-br-corner = 1;
         persistent-apps = [
           "/Applications/Google Chrome.app"
+          "/Applications/Antigravity.app"
           "/Applications/Claude.app"
           "/Applications/Ghostty.app"
           "/Applications/Visual Studio Code.app"
