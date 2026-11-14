@@ -14,7 +14,6 @@
     casks = [
       "blender"
       "discord"
-      "tailscale-app"
     ];
   };
 }
